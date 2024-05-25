@@ -6,7 +6,7 @@
     Script input requires a or mutiple Device Name/Host Name or Device Serial Number for Wipe the device as parameter.
 
 .Description:
-    IntuneDeviceWipe.ps1 is a PowerShell script to find Intune Enrolled Device information from Microsoft Endpoint Management and Wipe the device. 
+    IntuneRemoteWipe.ps1 is a PowerShell script to find Intune Enrolled Device information from Microsoft Endpoint Management and Wipe the device. 
 
 .AUTHOR:
     Sumanjit Pan
@@ -143,5 +143,5 @@ elseif ($Serials) {
     }
 }
 else {
-    Write-Host "Enter the Device Name or Serial Number as parameters. (Example: .\IntuneDeviceWipe.ps1 -Serials 'SERIAL')" -ForegroundColor Red
+    Write-Host "Enter the Device Name or Serial Number as parameters. (Example: .\IntuneRemoteWipe.ps1 -Serials 'SERIAL')" -ForegroundColor Red
 }
