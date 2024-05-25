@@ -1,3 +1,3 @@
 # Microsoft Intune PowerShell Script Collection #
-1. Wipe Intune Device
+1. Remote Wipe Intune Devices
 2. Windows Autopilot Device Cleanup (Upcoming)
