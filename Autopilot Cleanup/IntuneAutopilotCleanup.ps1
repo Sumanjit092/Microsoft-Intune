@@ -46,7 +46,7 @@ Write-Host "Checking Microsoft Graph Module..." -ForegroundColor Yellow
     if (Get-Module -ListAvailable | Where-Object {$_.Name -like "Microsoft.Graph"}) 
     {
     Write-Host "Microsoft Graph Module has installed." -ForegroundColor Green
-    Import-Module -Name 'Microsoft.Graph.DeviceManagement','Microsoft.Graph.DeviceManagement.Actions'
+    Import-Module -Name 'Microsoft.Graph.DeviceManagement','Microsoft.Graph.DeviceManagement.Actions','Microsoft.Graph.DeviceManagement.Enrollment','Microsoft.Graph.Identity.DirectoryManagement'
     Write-Host "Microsoft Graph Module has imported." -ForegroundColor Cyan
     ''
     ''
