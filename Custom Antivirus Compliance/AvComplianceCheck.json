@@ -1,0 +1,60 @@
+{
+    "Rules": [
+        {
+            "SettingName": "Windows Defender",
+            "Operator": "IsEquals",
+            "DataType": "String",
+            "Operand": "Windows Defender",
+            "MoreInfoUrl": "https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-antivirus-windows",
+            "RemediationStrings": [
+                {
+                    "Language": "en_US",
+                    "Title": "Windows Defender was not detected.",
+                    "Description": "You must have Windows Defender installed on your device to protect it from malware."
+                }
+            ]
+        },
+        {
+            "SettingName": "Security Provider",
+            "Operator": "IsEquals",
+            "DataType": "String",
+            "Operand": "Antivirus",
+            "MoreInfoUrl": "https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-antivirus-windows",
+            "RemediationStrings": [
+                {
+                    "Language": "en_US",
+                    "Title": "Security Provider not recognized.",
+                    "Description": "The security provider is not recognized by the system. Please ensure it is properly configured."
+                }
+            ]
+        },
+        {
+            "SettingName": "Windows Defender real time protection enabled",
+            "Operator": "IsEquals",
+            "DataType": "String",
+            "Operand": "On",
+            "MoreInfoUrl": "https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-antivirus-windows",
+            "RemediationStrings": [
+                {
+                    "Language": "en_US",
+                    "Title": "Windows Defender real time protection is not enabled",
+                    "Description": "Real time protection must be enabled in Windows Defender to protect your device, please enable this setting."
+                }
+            ]
+        },
+        {
+            "SettingName": "Windows Defender definitions up-to-date",
+            "Operator": "IsEquals",
+            "DataType": "String",
+            "Operand": "Up to Date",
+            "MoreInfoUrl": "https://learn.microsoft.com/en-us/defender-endpoint/microsoft-defender-antivirus-windows",
+            "RemediationStrings": [
+                {
+                    "Language": "en_US",
+                    "Title": "Windows Defender definitions are not up to date.",
+                    "Description": "Please update the Windows Defender definitions to ensure your device is protected from malware."
+                }
+            ]
+        }
+    ]
+}
