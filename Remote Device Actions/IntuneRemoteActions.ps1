@@ -115,7 +115,6 @@ Write-Host "https://learn.microsoft.com/en-us/mem/intune/remote-actions/device-m
 CheckInternet
 CheckMSGraph
 
-
 function Perform-RemoteAction {
     param (
         [string]$Identifier,
