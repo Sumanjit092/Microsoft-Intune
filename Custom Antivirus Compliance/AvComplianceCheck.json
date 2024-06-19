@@ -1,7 +1,7 @@
 {
     "Rules": [
         {
-            "SettingName": "Windows Defender",
+            "SettingName": "ProductName",
             "Operator": "IsEquals",
             "DataType": "String",
             "Operand": "Windows Defender",
@@ -15,7 +15,7 @@
             ]
         },
         {
-            "SettingName": "Security Provider",
+            "SettingName": "ServiceEnabled",
             "Operator": "IsEquals",
             "DataType": "String",
             "Operand": "Antivirus",
@@ -29,7 +29,7 @@
             ]
         },
         {
-            "SettingName": "Windows Defender real time protection enabled",
+            "SettingName": "RealTimeProtectionEnabled",
             "Operator": "IsEquals",
             "DataType": "String",
             "Operand": "On",
@@ -43,7 +43,7 @@
             ]
         },
         {
-            "SettingName": "Windows Defender definitions up-to-date",
+            "SettingName": "DefinitionsUpToDate",
             "Operator": "IsEquals",
             "DataType": "String",
             "Operand": "Up to Date",
