@@ -1,4 +1,6 @@
 # Microsoft Intune PowerShell Script Collection #
-1. Remote Wipe Intune Devices
-2. Windows Autopilot Device Cleanup
-3. Custom Antivirus Compliance Policy
+1. BitLocker RecoveryKey Backup
+2. Remote Wipe Intune Devices
+3. Windows Autopilot Device Cleanup
+4. Custom Antivirus Compliance Policy
+5. Remote Device Actions
