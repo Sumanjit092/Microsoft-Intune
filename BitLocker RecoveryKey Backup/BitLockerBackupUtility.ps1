@@ -70,11 +70,11 @@ function Invoke-BitlockerBackup {
         BackupToAAD-BitLockerKeyProtector -MountPoint $BitlockerDrive -KeyProtectorId $BitlockerKey -ErrorAction Stop
         Write-Output "BitLocker key backup to Azure AD attempted. Please verify manually."
         # Log success or other relevant information
-        Add-Content -Path "C:\Logs\BitLockerManagement.log" -Value "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss'): Backup to Azure AD successful."
+        Add-Content -Path "C:\Windows\Logs\BitLockerManagement.log" -Value "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss'): Backup to Azure AD successful."
     } catch {
         Write-Error "An unexpected error occurred during BitLocker key backup: $_"
         # Log the error
-        Add-Content -Path "C:\Logs\BitLockerManagement.log" -Value "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss'): Backup to Azure AD failed: $_"
+        Add-Content -Path "C:\Windows\Logs\BitLockerManagement.log" -Value "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss'): Backup to Azure AD failed: $_"
         exit 1
     }
 }
